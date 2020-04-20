@@ -8,7 +8,7 @@
 <div data-content-switcher class="{{@root.prefix}}--content-switcher" role="tablist" aria-label="Demo switch content">
   {{#each items}}
   <div class="{{@root.prefix}}--content-switcher-btn" role="presentation">
-    <input type="radio" id="{{id}}" name="{{../group}}" value="{{value}}" tabindex="0" role="radio"{{#is value ../selectedValue}} checked{{/is}}{{#if disabled}} disabled{{/if}}>
+    <input type="radio" id="{{id}}" name="{{../group}}" value="{{value}}" tabindex="0" role="radio"{{#if selected}} checked{{/if}}{{#if disabled}} disabled{{/if}}>
     <label for="{{id}}" class="{{@root.prefix}}--content-switcher__label">{{label}}</label>
   </div>
   {{/each}}
